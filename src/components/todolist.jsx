@@ -1,11 +1,12 @@
-const TodoList = function (){return <ul>
-    <li><input type="checkbox" class="Todo"></input>
-    ToDo 1
+const TodoList = function (){
+    return <ul>
+    <li className="todo"><input type="checkbox"></input>
+    Todo
     </li>
-    <li><input type="checkbox"></input>
+    <li className="todo"><input type="checkbox"></input>
     ToDo 2
     </li>
-    <li><input type="checkbox"></input>
+    <li className="todo"><input type="checkbox"></input>
     ToDo 3
     </li>
 </ul>};
