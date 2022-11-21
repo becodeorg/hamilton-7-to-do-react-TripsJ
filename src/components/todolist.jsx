@@ -12,7 +12,7 @@ export default function TodoList() {
     const newToDo = todos.map((todo) => {
         if (todo.id === elementId){
             todo.complete = !todo.complete;
-        }
+        } //this feels like it should be a method of my ToDo Class
         return todo;
     });
 
