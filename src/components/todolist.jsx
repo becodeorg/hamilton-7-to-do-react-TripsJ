@@ -6,6 +6,7 @@ let todo2 = new ToDo ("My second todo");
 export default function TodoList() {
   const initialTodos = [todo1,todo2];
   const [todos, setTodos] = useState(initialTodos);
+  // The first one is the array that is being used, the second one is the name of the Method that triggers the update in react
 
   const handleChange = (elementId)  =>{
     const newToDo = todos.map((todo) => {
