@@ -1,7 +1,6 @@
 import React from 'react'
-import Inputfield from './components/inputfield'
+import Form from './components/form'
 import TodoList from './components/todolist'
-import Submitbutton from './components/submitbutton'
 
 function App() {
   return (
@@ -11,10 +10,9 @@ function App() {
 
         </header>
 
-        <Inputfield />
-          <TodoList/>
-        <Submitbutton/>
-        </div>
+        <Form/>
+        <TodoList/>
+      </div>
   );
 }
 
