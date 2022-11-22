@@ -1,14 +1,29 @@
 // Need tu assemble the button and the textfield in one component
-const Form =() => {
+import React, { useRef } from "react";
+import ToDo from "./todo";
+// iimport useRef so i can well use a Ref
+//Ref is the react way of interacting with the DOM
+
+
+function Form (props){
+    const inputRef = useRef();
     function clickHandler(){
-        // DO STUFF
+        const inputElement = inputRef.current;
+        const currentTodos = [...props.todos];
+        const newEntry = new ToDo(inputElement.value)
+                currentTodos.push(newEntry);
+        
+
+        
+        props.setTodos(currentTodos)
+
     }
     
     
     return (
 
     <div>
-        <input type="text"/> 
+        <input ref={inputRef} type="text"/> 
         <button onClick={clickHandler}>Add Task</button>
     </div>
 )} 
