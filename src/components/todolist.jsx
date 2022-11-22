@@ -23,7 +23,7 @@ export default function TodoList(props) {
     <ul>
       {props.todos.map((todo) => (
         <li key={todo.id}>
-          <input type="checkbox" id={todo.id} onChange={()=> {
+          <input type="checkbox" defaultChecked={todo.complete} id={todo.id} onChange={()=> {
             handleChange(todo.id);
           }}   /> {todo.text}
         </li>
