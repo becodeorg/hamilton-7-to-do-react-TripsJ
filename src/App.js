@@ -1,7 +1,7 @@
 import React, { useState,  useRef, useEffect  } from 'react'
 import Form from './components/form'
 import TodoList from './components/todolist'
-import ToDo from './components/todo'
+// import ToDo from './components/todo'
 
 const LSKEY = "MyTodoApp"; // Should probably be something unique once this goes public but ill just generate a sha256 String 
 
